@@ -1,0 +1,85 @@
+body {
+  background: #111;
+}
+
+.grid {
+  transform-style: preserve-3d;
+  perspective: 400px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  width: 80vmin;
+  height: 80vmin;
+  transform: translate(calc(50vw - 40vmin), calc(50vh - 40vmin));
+}
+
+.item {
+  background: url(https://images.wsj.net/im-104260?width=1280&size=1);
+  background-size: 80vmin;
+}
+
+.top.left {
+  grid-area: 1/1/5/2;
+}
+
+.bottom.left {
+  grid-area: 5/1/6/5;
+}
+
+.bottom.right {
+  grid-area: 2/5/6/6;
+}
+
+.top.right {
+  grid-area: 1/2/2/6;
+}
+
+.center {
+  grid-area: 2/2/5/5;
+}
+
+.top {
+  background-position-y: top;
+}
+
+.right {
+  background-position-x: right;
+}
+
+.bottom {
+  background-position-y: bottom;
+}
+
+.left {
+  background-position-x: left;
+}
+
+.center {
+  background-position: center;
+  -webkit-animation: wobble 2s ease-in-out infinite;
+          animation: wobble 2s ease-in-out infinite;
+}
+
+@-webkit-keyframes wobble {
+  0%, 10% {
+    transform: rotateY(0turn);
+  }
+  50% {
+    transform: rotateY(0.5turn) scale(0.5);
+  }
+  90%, 100% {
+    transform: rotateY(1turn);
+  }
+}
+
+@keyframes wobble {
+  0%, 10% {
+    transform: rotateY(0turn);
+  }
+  50% {
+    transform: rotateY(0.5turn) scale(0.5);
+  }
+  90%, 100% {
+    transform: rotateY(1turn);
+  }
+}

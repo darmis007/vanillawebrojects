@@ -1,0 +1,169 @@
+@charset "UTF-8";
+* {
+  font-family: jf-jinxuan;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  vertical-align: top;
+}
+
+p {
+  text-align: center;
+  padding: 0 0 20px 0;
+  color: #919191;
+}
+
+h3 {
+  font-weight: 800;
+  letter-spacing: 1px;
+  padding: 0 0 30px 0;
+  margin: 0;
+}
+
+.fa-home {
+  font-size: 30px;
+  color: #333;
+}
+.fa-home:hover {
+  color: #14d1db;
+}
+
+.fa-bars {
+  font-size: 25px;
+}
+.fa-bars:hover {
+  color: #14d1db;
+}
+
+#menu a {
+  color: #333;
+  margin-left: 25px;
+  transition: 0.3s;
+}
+#menu a:hover {
+  color: #14d1db;
+}
+
+#home {
+  min-width: 750px;
+  background-image: url(https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v661-tk-16-watercolorpattern_1.jpg?auto=format&bg=transparent&con=3&cs=srgb&dpr=1&fm=jpg&ixlib=php-3.1.0&mark=rawpixel-watermark.png&markalpha=90&markpad=13&markscale=10&markx=25&q=75&usm=15&vib=3&w=1400&s=9e4b8111265359bbf1ffd3d625fc9cb5);
+  background-size: 200%;
+  background-repeat: no-repeat;
+  padding: 200px;
+  text-align: center;
+  margin-bottom: 100px;
+}
+#home h1, #home h6, #home p {
+  line-height: 1.6;
+}
+#home h1 {
+  font-size: 100px;
+  font-weight: 800;
+  letter-spacing: 6px;
+}
+#home .btn {
+  margin-top: 40px;
+  transform: scale(1.2);
+  padding: 0;
+  border-color: #14d1db;
+}
+#home .btn a {
+  color: #14d1db;
+}
+
+section {
+  padding: 0 0 50px 0;
+}
+
+section#cupcakes {
+  margin-top: 150px;
+}
+section#cupcakes .cupcakes h6 {
+  padding: 15px 0 0 0;
+  text-align: center;
+  font-weight: 600;
+}
+section#cupcakes .cupcakes h5 {
+  padding: 15px 0 0 0;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+section#cupcakes .cupcakes p {
+  margin: -5px 0 15px 0;
+}
+
+section#cakes .cakes h6, section#cakes .cakes h5, section#cakes .cakes h4 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 20px 0 0 0;
+}
+section#cakes .cakes p {
+  margin: -5px 0 5px 0;
+}
+
+section#free-from h6 {
+  text-align: center;
+  letter-spacing: 1px;
+  font-weight: 600;
+  padding: 20px 0 0 0;
+}
+section#free-from p {
+  text-align: center;
+  padding: 0 0 20px 0;
+  color: #919191;
+}
+
+section#contact {
+  padding-bottom: 0;
+}
+section#contact .contactimg {
+  width: 100%;
+  background-image: url(https://cdn.shopify.com/s/files/1/0015/1185/0042/files/contact-2_2048x.jpg?v=1530744409);
+  background-size: cover;
+}
+section#contact .contactimg {
+  border-left: solid 10px #ffd438;
+}
+section#contact .contact {
+  background-color: rgba(0, 0, 0, 0.03);
+  padding: 50px;
+  padding-left: 100px;
+}
+section#contact .contact h1, section#contact .contact h6 {
+  line-height: 2;
+}
+section#contact .contact h1 {
+  color: #14d1db;
+  font-weight: 900;
+  letter-spacing: 3px;
+}
+section#contact .contact i {
+  color: #14d1db;
+}
+section#contact .contact a {
+  color: #14d1db;
+  padding-left: 10px;
+}
+
+footer.copright {
+  height: 300px;
+}
+footer.copright .block {
+  top: 40%;
+  border-bottom: 1px solid #aaa;
+  margin: 0 50px;
+}
+footer.copright::after {
+  content: "All right reserved © Crumbs & Doilies";
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+  color: #aaa;
+  margin: 30px 0;
+  font-size: 14px;
+}

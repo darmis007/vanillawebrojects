@@ -1,0 +1,159 @@
+body, html {
+  height: 100%;
+  min-height: 100%;
+  font-family: "Helvetica", "Arial", sans-serif;
+}
+
+.wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.wrapper .row {
+  flex: 1 0 0;
+  display: flex;
+  box-shadow: 0 1px 0 lightgray;
+  position: relative;
+}
+.wrapper .row .row-title {
+  height: 20px;
+  line-height: 20px;
+  top: 50%;
+  margin-top: -10px;
+  left: 20px;
+  position: absolute;
+  pointer-events: none;
+}
+.wrapper .row .cell {
+  flex: 1 0 0;
+  box-shadow: inset -1px 0 0 lightgray;
+}
+.wrapper .row .cell:hover {
+  background: lightgray;
+  box-shadow: inset -1px 0 0 #bababa;
+}
+.wrapper .row.left-right .cell:hover ~ .cell, .wrapper .row.right-left .cell:hover ~ .cell {
+  background: lightgray;
+  box-shadow: inset -1px 0 0 #bababa;
+}
+.wrapper .row.right-left {
+  flex-direction: row-reverse;
+}
+.wrapper .row.reversed:hover .cell {
+  background: lightgray;
+  box-shadow: inset -1px 0 0 #bababa;
+}
+.wrapper .row.reversed:hover .cell:hover {
+  background: white;
+  box-shadow: inset -1px 1px 0 lightgray;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(3) {
+  background: #c6c6c6;
+  box-shadow: inset -1px 0 0 #adadad;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(4) {
+  background: #bababa;
+  box-shadow: inset -1px 0 0 #a0a0a0;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(5) {
+  background: #adadad;
+  box-shadow: inset -1px 0 0 #939393;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(6) {
+  background: #a0a0a0;
+  box-shadow: inset -1px 0 0 #878787;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(7) {
+  background: #939393;
+  box-shadow: inset -1px 0 0 #7a7a7a;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(8) {
+  background: #878787;
+  box-shadow: inset -1px 0 0 #6d6d6d;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(9) {
+  background: #7a7a7a;
+  box-shadow: inset -1px 0 0 #606060;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(10) {
+  background: #6d6d6d;
+  box-shadow: inset -1px 0 0 #545454;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(11) {
+  background: #6d6d6d;
+  box-shadow: inset -1px 0 0 #545454;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(12) {
+  background: #606060;
+  box-shadow: inset -1px 0 0 #474747;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(13) {
+  background: #545454;
+  box-shadow: inset -1px 0 0 #3a3a3a;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(14) {
+  background: #474747;
+  box-shadow: inset -1px 0 0 #2d2d2d;
+}
+.wrapper .row[class*=gradient] .cell:hover:nth-child(15) {
+  background: #3a3a3a;
+  box-shadow: inset -1px 0 0 #212121;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(3), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(3) {
+  background: #c6c6c6;
+  box-shadow: inset -1px 0 0 #adadad;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(4), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(4) {
+  background: #bababa;
+  box-shadow: inset -1px 0 0 #a0a0a0;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(5), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(5) {
+  background: #adadad;
+  box-shadow: inset -1px 0 0 #939393;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(6), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(6) {
+  background: #a0a0a0;
+  box-shadow: inset -1px 0 0 #878787;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(7), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(7) {
+  background: #939393;
+  box-shadow: inset -1px 0 0 #7a7a7a;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(8), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(8) {
+  background: #878787;
+  box-shadow: inset -1px 0 0 #6d6d6d;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(9), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(9) {
+  background: #7a7a7a;
+  box-shadow: inset -1px 0 0 #606060;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(10), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(10) {
+  background: #6d6d6d;
+  box-shadow: inset -1px 0 0 #545454;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(11), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(11) {
+  background: #6d6d6d;
+  box-shadow: inset -1px 0 0 #545454;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(12), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(12) {
+  background: #606060;
+  box-shadow: inset -1px 0 0 #474747;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(13), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(13) {
+  background: #545454;
+  box-shadow: inset -1px 0 0 #3a3a3a;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(14), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(14) {
+  background: #474747;
+  box-shadow: inset -1px 0 0 #2d2d2d;
+}
+.wrapper .row[class*=gradient][class*=-left-right] .cell:hover ~ .cell:nth-child(15), .wrapper .row[class*=gradient][class*=-right-left] .cell:hover ~ .cell:nth-child(15) {
+  background: #3a3a3a;
+  box-shadow: inset -1px 0 0 #212121;
+}
+.wrapper .row[class*=gradient][class*=right-left] {
+  flex-direction: row-reverse;
+}
+.wrapper .row[class*=gradient][class*=right-left]:hover .row-title {
+  color: lightgray;
+}

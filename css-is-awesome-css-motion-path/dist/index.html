@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Mono&amp;display=swap'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nanum+Gothic&amp;display=swap'>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <!-- partial:index.partial.html -->
+    <graph>
+        <text split>CSS is Awesome</text>
+        <belt split="21"></belt>
+        <tree split="13"></tree>
+        <tree split="13" outer></tree>
+        <star split="21"></star>
+        <circle></circle>
+        <arrow></arrow>
+    </graph>
+
+
+    <warning>
+        Your browser doesn't support
+        <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Motion_Path">CSS Motion Path</a>
+    </warning>
+
+
+    <script>
+        /* You may want to use splitting.js */
+        Array.from(document.querySelectorAll('[split]') || []).forEach(el => {
+            let text = el.innerHTML.trim();
+            let total = text.length || Number(el.getAttribute('split')) || 0;
+            el.style.setProperty('--total', total);
+            el.innerHTML = Array(total).fill(0)
+                .map((n, i) => `<span style="--n:${i}">${text[i]||''}</span>`)
+                .join('');
+        });
+    </script>
+    <!-- partial -->
+
+</body>
+
+</html>
